@@ -126,6 +126,9 @@ async fn repl_loop(config: &config::Config) -> ExitCode {
 					}
 					Err(e) => eprintln!("{e}"),
 				},
+				"clear" | "clear()" | ":clear" => {
+					print!("\x1b[2J\x1b[H");
+				}
 				line => {
 					interrupt.reset();
 					match eval_and_print_res(line, &mut context, true, &interrupt, config).await {
