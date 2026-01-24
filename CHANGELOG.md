@@ -1,5 +1,16 @@
 ## Changelog
 
+### v1.5.8 (2026-01-24)
+
+* Use `rustls` rather than `native-tls` by default
+* Add `clear` command to the interactive fend CLI
+* Fix significant figure rounding
+* Increase precision for pi
+* Fix currency conversions if the decimal separator is set to comma
+* Make variable serialisations for compact
+* Add TL and ₺ as aliases for the Turkish lira
+* Improve performance
+
 ### v1.5.7 (2025-07-14)
 
 * Add `print` and `println` functions

@@ -202,7 +202,7 @@ dependencies = [
 
 [[package]]
 name = "fend"
-version = "1.5.7"
+version = "1.5.8"
 dependencies = [
  "fend-core",
  "rand",
@@ -216,11 +216,11 @@ dependencies = [
 
 [[package]]
 name = "fend-core"
-version = "1.5.7"
+version = "1.5.8"
 
 [[package]]
 name = "fend-wasm"
-version = "1.5.7"
+version = "1.5.8"
 dependencies = [
  "fend-core",
  "js-sys",
