@@ -15,6 +15,11 @@ npm ci
 npm run lint
 npm run format -- --check
 
+if [[ -d "/opt/homebrew/opt/imagemagick-full/bin" ]]; then
+	magick() {
+		/opt/homebrew/opt/imagemagick-full/bin/magick "$@"
+	}
+fi
 magick ../icon/icon.svg -resize "128x128" public/fend-icon-128.png
 
 mkdir -p public/documentation
